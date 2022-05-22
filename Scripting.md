@@ -1,8 +1,18 @@
 # OPEN STAGE CONTROL HANDBOOK
 ## https://openstagecontrol.ammd.net
 
-### Configuration :
 
+This handbook is a summary and sample of all the usefull commands I personnaly use. 
+More detailed configuration available [here](https://openstagecontrol.ammd.net/docs/getting-started/introduction/).
+### Configuration :
+Here is a default configuration : 
+![midi config](img/config.png)
+
+- 'send' is the default OSC target 
+- 'port' is the client port (the port used to display the inteerface on your tablet/phone).
+- 'instance-name' is the Bonjour discovery name
+- 'load' is the current project (note that is no module is loaded, you won't bee able to see the interface on a remote device)
+- 'osc-port' is the OSC listening/input port of the application.
 ### Scripting :
 
 
@@ -51,7 +61,7 @@
 
 ### MIDI 
 
-#### Sending midi 
+#### sending midi 
 first, you'll need to create a virtual midiDevice.  
 in the home panel, fill the midi field with : `list toAbleton:virtual`.
 
@@ -92,7 +102,7 @@ Note that you can receive all midi CC by removing the 'preArgs'
 You will then receive arrays [1,24,127] for exemple. 
 Getting the MIDI Value is done by the following script :  
 
-`var val = get('this');` 
+`var val = get('this');`  
 `console.log(val[2]);`
 
 
@@ -114,4 +124,3 @@ Then, you can use the result il the 'onKeyboard' script :
 
 
 
-### CUSTOM  MODULES 
