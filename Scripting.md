@@ -27,7 +27,7 @@ Here is a default configuration :
 `send ('127.0.0.1:1239','/test',val);` (specific target)  
 `send ('/test',val,42);` (multiple values)  
 `send ('/test',{type: 'i', value: 42});` (integer values)  
-`send ('/test',{type: 's', value: 'hsllo'})` (string values)  
+`send ('/test',{type: 's', value: 'hello'})` (string values)  
 
 
 
@@ -105,10 +105,10 @@ Getting the MIDI Value is done by the following script :
 `var val = get('this');`  
 `console.log(val[2]);`
 
-
 ### KEYBOARD 
 
-Only, in 'script' widget. You should define wich key is concerned by the script by filling the key 'keyBinding' field with :  
+Only, in 'script' widget.  
+You should define wich key is concerned by the script by filling the key 'keyBinding' field with :  
 - 'a' -> script is called when 'a' is pressed 
 - 'a + z' -> 'a' and 'z' are pressed 
 - ["a", "z"] -> 'a' or 'z' are pressed 
