@@ -3,7 +3,7 @@
 
 ### Configuration :
 
-###Scripting :
+### Scripting :
 
 
 ###### get the current component value : 
@@ -13,11 +13,11 @@
 `set('face1',face1Val);`
 
 ###### sending OSC Messages : 
-`send( '/any/OSC/Adress', value);`
-`send ('127.0.0.1:1239','/test',val);` (specific target)
-`send ('/test',val,42);` (multiple values)
-`send ('/test',{type: 'i', value: 42});` (integer values)
-`send ('/test',{type: 's', value: 'hsllo'})` (string values)
+`send( '/any/OSC/Adress', value);`  
+`send ('127.0.0.1:1239','/test',val);` (specific target)  
+`send ('/test',val,42);` (multiple values)  
+`send ('/test',{type: 'i', value: 42});` (integer values)  
+`send ('/test',{type: 's', value: 'hsllo'})` (string values)  
 
 
 
