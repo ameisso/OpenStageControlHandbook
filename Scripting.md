@@ -1,4 +1,4 @@
-# OPEN STAGE CONTROL HANDBOOK
+∑# OPEN STAGE CONTROL HANDBOOK
 ## https://openstagecontrol.ammd.net
 
 
@@ -56,7 +56,19 @@ Here is a default configuration :
 `console.log('name '+cat)`   
   
 `storage.removeItem('myCat');`   
-`storage.clear();`   
+cstorage.clear();`   
+
+
+###### template containers 
+If you want to create a module to control an index object (eg a motor) and then duplicate it so it controls another one. 
+
+- create a panel  
+- create a variable with an id int he panel properties : 
+![panelId](img/panelId.png)
+- refer to that ID for every widget id : 
+![widgetId](img/widgetId.png)
+- access the id from scripts `var widgetName = "widget"+getProp("parent", "variables").motorId`
+- duplicating the panel and changing the ID will create another instance to control another motor. 
 
 
 ### MIDI 
@@ -121,6 +133,10 @@ Then, you can use the result il the 'onKeyboard' script :
     `console.log("A is pressed")`  
 `}`  
 
-
-
+### CUSTOM  MODULES 
+#### using external libraries (with npm)
+- create a project with npm init 
+- install any library 
+- create a 'myModule.js" file 
+- import the library with "nativeRequire" instead of "require" -> var artnet = `nativeRequire('artnet')`
 
