@@ -1,4 +1,4 @@
-∑# OPEN STAGE CONTROL HANDBOOK
+# OPEN STAGE CONTROL HANDBOOK
 ## https://openstagecontrol.ammd.net
 
 
