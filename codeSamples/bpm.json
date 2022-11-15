@@ -156,11 +156,14 @@
             "value": "",
             "default": "",
             "linkId": "",
-            "address": "auto",
-            "preArgs": "",
+            "address": "/control",
+            "preArgs": [
+              1,
+              24
+            ],
             "typeTags": "",
             "decimals": 2,
-            "target": "",
+            "target": "midi:vMidi",
             "ignoreDefaults": false,
             "bypass": false,
             "onCreate": "",
