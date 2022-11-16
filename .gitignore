@@ -1,1 +1,3 @@
 .DS_Store
+codeSamples/QRCodeModule/node_modules
+codeSamples/QRCodeModule/package-lock.json
