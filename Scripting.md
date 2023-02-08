@@ -22,6 +22,12 @@ Here is a default configuration :
 ###### set a component value : 
 `set('face1',face1Val);`
 
+
+###### update a widget property : 
+fill the field with a `VAR{varName}`: 
+![dynamic var](img/dynamicProperties.png)
+`setVar("widgetId", "varName", "red")`
+
 ###### sending OSC Messages : 
 `send( '/any/OSC/Adress', value);`  
 `send ('127.0.0.1:1239','/test',val);` (specific target)  
