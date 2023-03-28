@@ -62,7 +62,7 @@ fill the field with a `VAR{varName}`:
 `console.log('name '+cat)`   
   
 `storage.removeItem('myCat');`   
-cstorage.clear();`   
+`storage.clear();`   
 
 
 ###### template containers 
