@@ -29,7 +29,9 @@ You can also dynamically generate OSC addresses :
 this will send message OSC with the folowwing address : `/dmx/1/intensity` from our exemple
 
 ###### getting variables inside a script : 
-`var fixtureID = getProp("parent", "variables").fixtureID`
-`var fixtureAddress = getProp("parent", "variables").dmxAddress`
+``` 
+var fixtureID = getProp("parent", "variables").fixtureID
+var fixtureAddress = getProp("parent", "variables").dmxAddress
 
-`console.log('fixture loaded '+fixtureID+' DMX :'+fixtureAddress)`
+console.log('fixture loaded '+fixtureID+' DMX :'+fixtureAddress)
+``` 
