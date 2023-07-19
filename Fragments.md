@@ -28,6 +28,11 @@ Otherwise you need to give it's full path.
 ###### passing variables to a fragment   
 Then you can define variables (in props) that will be sent to the fragment. 
 
+```
+{
+     "variables": {   "fragment_id": "test" } 
+}
+```
 You can access that variable in the fragment with the following syntax
 `@{parent.variables.fragment_id}`
 

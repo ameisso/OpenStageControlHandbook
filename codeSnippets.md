@@ -5,7 +5,7 @@
 
 ### SLEEP 
 
-//noprotect allow the script to work
+`//noprotect` allow the script to work
 
 ```
 // noprotect 
