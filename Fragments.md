@@ -43,10 +43,12 @@ Or inside a script :
 You can also include fragment in matrix widget. 
 In that case, the props format should be : 
 
-`{`
-`  "file": "fragmentSample.json",`
-`  "props": { "variables": {   "fragment_id": "test" } }`
-`}`
+```
+{
+  "file": "fragmentSample.json",
+  "props": { "variables": {   "fragment_id": "test" } }
+}
+```
 
 ###### SAMPLE 
 There is a sample in the codeSamples folder of this repo
