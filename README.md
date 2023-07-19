@@ -15,4 +15,5 @@ Here is a default configuration :
 - 'osc-port' is the OSC listening/input port of the application.
 
 #  [Scripting tips](Scripting.md)
+#  [Fragments](Fragments.md)
 #  [Global Variables ](usingGlobalParameters.md)
