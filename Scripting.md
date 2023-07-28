@@ -25,13 +25,16 @@ fill the field with a `VAR{varName}`:
 `send ('/test',{type: 'i', value: 42});` (integer values)  
 `send ('/test',{type: 's', value: 'hello'})` (string values)  
 
-
-
-###### seending multiple OSC Messages 
+###### sending multiple OSC Messages 
 `for( var i = 0 ; i < 5; i ++)`  
 `{`  
 `   send( '/test/'+i, 1);`  
-`}`  
+`}` 
+
+###### getting OSC properties 
+in script  :`console.log('got message '+get('this')[0])`
+in var : ?
+
 
 ###### get a property : 
 `getProp('widgetId','propName')`  
