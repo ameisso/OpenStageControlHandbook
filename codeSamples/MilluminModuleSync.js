@@ -2,12 +2,9 @@ module.exports = {
 
 
   oscInFilter: function (data) {
-    ///////////////////////////////////////////
-    // CHANGE THE FOLLOWING 
-    ///////////////////////////////////////////
-    var targetBackupMachineIP = "192.168.2.117"
-    var targetBackupMachinePort = 5000
-    ///////////////////////////////////////////
+    var oscSettings = settings.read('send').toString()
+    var targetBackupMachineIP = oscSettings.split(':')[0]
+    var targetBackupMachinePort = oscSettings.split(':')[1]
     var { address, args, host, port } = data
 
     if (address === '/millumin/board/launchedColumn') {
