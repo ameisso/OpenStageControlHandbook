@@ -7,22 +7,26 @@ module.exports = {
     var targetBackupMachinePort = oscSettings.split(':')[1]
     var { address, args, host, port } = data
 
+   // console.log('OSC '+address)
     if (address === '/millumin/board/launchedColumn') {
       send(targetBackupMachineIP, targetBackupMachinePort, '/millumin/action/launchColumn', args[0])
       console.log("launched column: " + JSON.stringify(args[0]));
     }
-    for (var i = 0; i < 10; i++) {
-      var inputAddress = '/millumin/index:' + i + '/media/time'
-      var outputAddress = '/millumin/index:' + i + '/media/time'
-      if (address === inputAddress) {
-        send(targetBackupMachineIP, targetBackupMachinePort, outputAddress, args[0].value)
+    else {
+      for (var i = 0; i < 10; i++) {
+        var inputAddress = '/millumin/index:' + i + '/media/time'
+        var outputAddress = '/millumin/index:' + i + '/media/time'
+        if (address === inputAddress) {
+          send(targetBackupMachineIP, targetBackupMachinePort, outputAddress, args[0].value)
+        }
       }
     }
+
     return { address, args, host, port }
   },
 
   oscOutFilter: function (data) {
-    var {address, args, host, port, clientId} = data
+    var { address, args, host, port, clientId } = data
     return { address, args, host, port }
   }
 }
