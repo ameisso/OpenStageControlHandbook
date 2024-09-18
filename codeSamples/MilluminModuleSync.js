@@ -22,6 +22,7 @@ module.exports = {
   },
 
   oscOutFilter: function (data) {
+    var {address, args, host, port, clientId} = data
     return { address, args, host, port }
   }
 }
