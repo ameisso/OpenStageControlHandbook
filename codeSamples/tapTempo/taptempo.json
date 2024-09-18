@@ -1,5 +1,5 @@
 {
-  "version": "1.25.0",
+  "version": "1.27.0",
   "createdWith": "Open Stage Control",
   "type": "session",
   "content": {
@@ -261,7 +261,7 @@
         "ignoreDefaults": false,
         "bypass": false,
         "onCreate": "",
-        "onValue": "var beat = get('this')\nswitch(beat){\n  case 1:\n    {\n   //   send('127.0.0.1:5000','/action/launchColumn',beat)\n    }\n    break;\n      case 2:\n    {\n      \n    }\n    break;\n      case 3:\n    {\n      \n    }\n    break;\n      case 4:\n    {\n      \n    }\n    break;\n}",
+        "onValue": "var beat = get('this')\nswitch(beat){\n  case 1:\n    {\n   //   send('127.0.0.1:5000','/action/launchColumn',beat)\n    }\n    break;\n      case 2:\n    {\n      \n    }\n    break;\n      case 3:\n    {\n      \n    }\n    break;\n      case 4:\n    {\n      \n    }\n    break;\n}\n\nsetVar('onBeat', 'onBeat', get('this'))",
         "onKeyboard": "",
         "keyBinding": "",
         "keyRepeat": true,
@@ -415,6 +415,7 @@
     "bypass": false,
     "onCreate": "",
     "onValue": "",
-    "tabs": []
+    "tabs": [],
+    "onPreload": ""
   }
 }
