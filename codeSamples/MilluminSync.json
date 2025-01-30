@@ -1,0 +1,27 @@
+{
+  "version": "1.25.7",
+  "createdWith": "Open Stage Control",
+  "type": "fragment",
+  "content": {
+    "type": "script",
+    "lock": false,
+    "id": "MilluminBackup",
+    "comments": "",
+    "value": "",
+    "default": "",
+    "linkId": "",
+    "address": "/millumin/board/launchedColumn",
+    "preArgs": "",
+    "typeTags": "",
+    "decimals": 2,
+    "target": "",
+    "ignoreDefaults": false,
+    "bypass": false,
+    "onCreate": "",
+    "onValue": "console.log('currentCol '+get('this'));\nsend('172.16.0.69:5000','/millumin/action/launchColumn',get('this'))",
+    "onKeyboard": "",
+    "keyBinding": "",
+    "keyRepeat": true,
+    "keyType": "keydown"
+  }
+}
